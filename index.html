@@ -200,12 +200,19 @@
     <!-- Input para título -->
     <input id="tituloNota" type="text" placeholder="Escribe el título de la nota aquí..." />
 
-    <div id="toolbar">
-      <button onclick="document.execCommand('bold')"><b>B</b></button>
-      <button onclick="document.execCommand('italic')"><i>I</i></button>
-      <button onclick="document.execCommand('underline')"><u>U</u></button>
-      <button onclick="insertCode()">Code</button>
-    </div>
+<div id="toolbar">
+  <button onclick="document.execCommand('bold')"><b>B</b></button>
+  <button onclick="document.execCommand('italic')"><i>I</i></button>
+  <button onclick="document.execCommand('underline')"><u>U</u></button>
+  <button onclick="insertCode()">Code</button>
+  <button onclick="document.execCommand('insertUnorderedList')">• Viñetas</button>
+  <button onclick="document.execCommand('insertOrderedList')">1. Numeración</button>
+  <button onclick="document.execCommand('justifyLeft')">⬅ Izquierda</button>
+  <button onclick="document.execCommand('justifyCenter')">↔ Centro</button>
+  <button onclick="document.execCommand('justifyRight')">➡ Derecha</button>
+  <button onclick="document.execCommand('justifyFull')">📰 Justificar</button>
+</div>
+
     <div id="editor" contenteditable="true"></div>
   </div>
 
